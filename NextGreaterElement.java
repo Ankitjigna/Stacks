@@ -8,8 +8,9 @@ public class NextGreaterElement{
         // for(int i=arr.length-1; i>=0; i--){      // Next Greater Element in Right hand side
         for(int i=0; i<=arr.length-1; i++){         // Next Greater Element in Left hand side
             //while
-            while(!s.isEmpty() && arr[s.peek()] <= arr[i]){   
-            
+            // while(!s.isEmpty() && arr[s.peek()] <= arr[i]){   
+            while(!s.isEmpty() && arr[s.peek()] >= arr[i]){  // Next Smaller in Left
+
                 s.pop();
             }
 
